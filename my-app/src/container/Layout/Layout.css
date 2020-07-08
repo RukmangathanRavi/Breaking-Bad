@@ -1,0 +1,85 @@
+:root {
+  --backgroundColor: rgb(4, 39, 4);
+  --textColor: white;
+}
+
+/* header styling starts here */
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text > input {
+  width: 50%;
+  height: 30px;
+}
+
+.text > input:focus {
+  border-radius: 2px;
+}
+
+.text > button {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+/* end of heading section */
+
+/* starting of img styling section */
+.spacing {
+  margin: 20px 90px;
+}
+
+.spacing > img {
+  width: 200px;
+  height: 250px;
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+.spacing > img:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.spacing > p {
+  color: var(--textColor);
+}
+
+.dfl {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+/* image styling ends here */
+
+/* arrange styling starts here */
+.arrange {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  animation-name: moving;
+  animation-duration: 2s;
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(500px);
+  }
+  50% {
+    transform: translate(-40px);
+  }
+  100% {
+    transform: 0px;
+  }
+}
+
+.both {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* arrange styling ends here */
